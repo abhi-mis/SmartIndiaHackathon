@@ -28,6 +28,7 @@
   font-size: 1rem !important;
   border-radius: 1rem;
 }
+.active,
 .button:hover {
   color: #0656ec !important;
 }
@@ -108,7 +109,7 @@
   left: 0;
   right: 0;
   z-index: -1;
-  background: linear-gradient(345deg, #080808 55%, rgb(255, 255, 255) 0%);
+  background: linear-gradient(345deg, #080808 55%, #fff 0%);
 }
 
 .footer {
