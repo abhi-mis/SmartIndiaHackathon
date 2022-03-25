@@ -33,6 +33,12 @@
         .card:hover {
             box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3) !important;
             transform: translateY(-15px) !important;
+            text-shadow: -1px -1px 2px rgba(99, 156, 138, 1) !important;
+        }
+
+        .card-body h2 {
+            letter-spacing: 0.1rem !important;
+            text-shadow: -1px -1px 2px rgb(84, 127, 245);
         }
 
         .content1 {
@@ -76,15 +82,16 @@
         .content_card {
             border-radius: 2rem !important;
             padding: 2rem;
-            transition: 0.3s;
+            transition: 0.9s !important;
             display: flex;
-            /* flex-direction: column; */
             justify-content: space-around;
+
         }
 
         .content_card:hover {
             box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
             transform: translateY(-15px);
+
         }
 
         .content_card img {
@@ -97,8 +104,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-black">
         <div class="container-lg">
-            <a class="navbar-brand text-primary fw-bold fs-3" href="#">My<span class="text-light">Logo</span>
-            </a>
+            <img src="logo.jpeg" class="fs-6" style="height: auto; width: 15%;" alt="">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -107,20 +114,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="button nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="button nav-link" aria-current="page" href="/index.html"
+                            style="font-family: 'Jacques Francois Shadow', cursive;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="button nav-link active" aria-current="page" href="workout.html">Workout</a>
+                        <a class="button nav-link active" aria-current="page" href="/workout.html"
+                            style="font-family: 'Jacques Francois Shadow', cursive;">Workout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="button nav-link" aria-current="page" href="yoga.html">Yoga</a>
+                        <a class="button nav-link" aria-current="page" href="/yoga.html"
+                            style="font-family: 'Jacques Francois Shadow', cursive;">Yoga</a>
                     </li>
                     <li class="nav-item">
-                        <a class="button nav-link" aria-current="page" href="diet_plan.html">Diet Plan</a>
+                        <a class="button nav-link" aria-current="page" href="/diet_plan.html"
+                            style="font-family: 'Jacques Francois Shadow', cursive;">Diet Plan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="button nav-link" aria-current="page" href="discipline.html">Discipline</a>
+                        <a class="button nav-link" aria-current="page" href="/discipline.html"
+                            style="font-family: 'Jacques Francois Shadow', cursive;">Discipline</a>
                     </li>
+
+
                 </ul>
             </div>
         </div>
@@ -131,9 +145,13 @@
         <div class="container">
 
             <div class="py-5 text-center">
-                <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72"
-                    height="57">
-                <h2 class="text-primary fw-bold">Workout</h2>
+                <img class="d-block mx-auto mb-4" src="logo.jpeg" alt="" width="250" height="70"
+                    style="border-radius: 1rem!important;">
+                <h2 class="text-dark fw-bold fs-2"
+                    style="font-family: 'Jacques Francois Shadow', cursive; letter-spacing: 0.1rem!important; text-transform: uppercase; text-shadow: -1px -1px 2px rgb(84, 127, 245)!important;">
+                    Home
+                    Workout
+                </h2>
                 <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required
                     form
                     group
@@ -149,12 +167,12 @@
             <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                 <div class="col ">
-                    <div class="card shadow-sm bg-primary">
+                    <div class="card shadow-sm">
                         <img src="weight_tran.jpg" alt="">
 
                         <div class="card-body ">
-                            <h2 class="text-light fw-bold text-center my-4">Weight Training</h2>
-                            <p class="card-text text-light">This is a wider card with supporting text below as a natural
+                            <h2 class=" fw-bold text-center my-4">Push Ups</h2>
+                            <p class="card-text ">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
 
@@ -166,7 +184,7 @@
                         <img src="calisthenics.jpg" alt="">
 
                         <div class="card-body">
-                            <h2 class="fw-bold text-center my-4">Calisthenics</h2>
+                            <h2 class="fw-bold text-center my-4">Sit Ups</h2>
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
@@ -175,12 +193,12 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card bg-primary shadow-sm">
+                    <div class="card shadow-sm">
                         <img src="h.jfif" alt="">
 
                         <div class="card-body">
-                            <h2 class="text-light fw-bold text-center my-4">Home Workouts</h2>
-                            <p class="card-text text-light">This is a wider card with supporting text below as a natural
+                            <h2 class=" fw-bold text-center my-4">Squats</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
 
@@ -196,7 +214,7 @@
                         <img src="crossfit.jfif" alt="">
 
                         <div class="card-body ">
-                            <h2 class="fw-bold text-center my-4">Crossfit</h2>
+                            <h2 class="fw-bold text-center my-4">Cat & Camel</h2>
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
@@ -205,12 +223,12 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card shadow-sm bg-primary">
+                    <div class="card shadow-sm ">
                         <img src="hiit_workout.jpg" alt="">
 
                         <div class="card-body">
-                            <h2 class="text-light fw-bold text-center my-4">HIIT Workout</h2>
-                            <p class="card-text text-light">This is a wider card with supporting text below as a natural
+                            <h2 class=" fw-bold text-center my-4">Jumping Jack</h2>
+                            <p class="card-text ">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
 
@@ -222,7 +240,85 @@
                         <img src="straingth_tran.jpg" alt="">
 
                         <div class="card-body">
-                            <h2 class="fw-bold text-center my-4">Strength Training</h2>
+                            <h2 class="fw-bold text-center my-4">Sumo Squats</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="straingth_tran.jpg" alt="">
+
+                        <div class="card-body">
+                            <h2 class="fw-bold text-center my-4">Hill Touch</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="straingth_tran.jpg" alt="">
+
+                        <div class="card-body">
+                            <h2 class="fw-bold text-center my-4">X Touch</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="straingth_tran.jpg" alt="">
+
+                        <div class="card-body">
+                            <h2 class="fw-bold text-center my-4">Lunges</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="straingth_tran.jpg" alt="">
+
+                        <div class="card-body">
+                            <h2 class="fw-bold text-center my-4">Burpee</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="straingth_tran.jpg" alt="">
+
+                        <div class="card-body">
+                            <h2 class="fw-bold text-center my-4">Leg Raise</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="straingth_tran.jpg" alt="">
+
+                        <div class="card-body">
+                            <h2 class="fw-bold text-center my-4">Wall Sit</h2>
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
