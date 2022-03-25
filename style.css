@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,17 +21,26 @@
 }
 .button {
   color: #fff !important;
+  letter-spacing: 0.1rem;
   margin-left: 1rem !important;
   margin-right: 1rem !important;
   text-transform: uppercase !important;
-  padding: 0.5rem !important;
-  font-weight: bold !important;
-  font-size: 1rem !important;
-  border-radius: 1rem;
+  padding: 0.3rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  border-radius: 0.6rem;
+  background-color: black !important;
 }
-.active,
 .button:hover {
-  color: #0656ec !important;
+  background-color: #0656ec !important;
+}
+.features-btn {
+  background-color: #0656ec !important;
+  color: white !important;
+}
+.card:hover .features-btn {
+  background-color: white !important;
+  color: black !important;
 }
 
 .home-img img {
@@ -40,7 +50,7 @@
 
 .image {
   width: 100%;
-  /* height: 50vh; */
+
   height: auto;
 }
 
@@ -48,7 +58,7 @@
   color: #353434;
   background-color: #fff;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -76,8 +86,12 @@
   background: linear-gradient(160deg, #080808 55%, #fff 0%);
 }
 
+.features-heading:hover {
+  color: white !important;
+}
+
 .card {
-  transition: 0.3s;
+  transition: 0.6s !important;
   margin-top: 1rem;
   border-radius: 2rem;
   padding: 1rem;
@@ -86,8 +100,8 @@
 .card:hover {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
   transform: translateY(-15px);
-  /* padding: 0; */
-  /* border-radius: 1rem 1rem 2rem 2rem; */
+  background-color: #0656ec !important;
+  color: white !important;
 }
 
 .card img {
@@ -113,11 +127,14 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   bottom: 0;
   background-color: black;
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   -webkit-clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 34%);
   clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 34%);
 }
