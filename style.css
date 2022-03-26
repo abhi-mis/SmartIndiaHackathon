@@ -41,6 +41,7 @@
 .card:hover .features-btn {
   background-color: white !important;
   color: black !important;
+  cursor: pointer;
 }
 
 .home-img img {
