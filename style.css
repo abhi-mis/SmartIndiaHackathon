@@ -139,6 +139,11 @@
   -webkit-clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 34%);
   clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 34%);
 }
+.socLinks:hover {
+            transform: scale(1.6) !important;
+            color: white !important;
+
+        }
 .btn {
   border-radius: 1rem !important;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
